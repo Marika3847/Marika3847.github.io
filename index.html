@@ -38,6 +38,9 @@
     .two{grid-column:span 6}
     .gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
     .ph{aspect-ratio:1/1;border-radius:14px;border:1px dashed rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);font-size:13px;background:rgba(0,0,0,.15)}
+    .add-photo{flex-direction:column;gap:8px;color:var(--text);background:rgba(200,160,106,.12);border-color:rgba(200,160,106,.45)}
+    .add-photo .plus{font-size:42px;line-height:1;font-weight:300}
+    .add-photo .label{font-size:13px}
     footer{margin-top:26px;color:rgba(255,255,255,.55);font-size:13px}
     @media (max-width:820px){
       .card,.two{grid-column:1/-1}
@@ -96,7 +99,7 @@
         <h2>Gallery</h2>
         <p>Add your photos here (placeholders for now).</p>
         <div class="gallery" style="margin-top:10px">
-          <div class="ph">Photo 1</div><div class="ph">Photo 2</div><div class="ph">Photo 3</div>
+          <div class="ph add-photo"><span class="plus">+</span><span class="label">Add photo</span></div><div class="ph">Photo 1</div><div class="ph">Photo 2</div><div class="ph">Photo 3</div>
           <div class="ph">Photo 4</div><div class="ph">Photo 5</div><div class="ph">Photo 6</div>
         </div>
       </div>
